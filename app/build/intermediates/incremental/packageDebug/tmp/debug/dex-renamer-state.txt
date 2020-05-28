@@ -1,0 +1,4 @@
+#Thu May 28 19:12:44 EET 2020
+base.0=/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

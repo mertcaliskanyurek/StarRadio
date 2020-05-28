@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryLight">#8e8e8e</color>
+    <color name="colorPrimaryDark">#373737</color>
+
+    <color name="colorSecondary">#5e92f3</color>
+    <color name="colorSecondaryDark">#003c8f</color>
+    <color name="colorSecondaryLight">#5e92f3</color>
+
+    <color name="colorButtonNormal">#5e92f3</color>
+    <color name="colorButtonHighlight">#5e92f3</color>
+    <color name="colorControlActivated">#5e92f3</color>
+
+    <color name="colorAccent">#5e92f3</color>
+    
+    <color name="colorTextPrimary">#ffffff</color>
+    <color name="colorWindowBackground">#616161</color>
+
+    <color name="transparent_black">#aa000000</color>
+
+    <!-- selected tab text -->
+    <color name="selected_tabtext">#bb000000</color>
+
+    <!-- non selected tab text -->
+    <color name="unselected_tabtext">#77000000</color>
+    <color name="shuffle_grey">#ffdedede</color>
+    <color name="background_grey">#ffdedede</color>
+
+    <!-- Black -->
+    <color name="black">#ff000000</color>
+
+</resources>

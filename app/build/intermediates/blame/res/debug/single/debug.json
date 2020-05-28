@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_random_off.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_random_off.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_previous_sc.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_previous_sc.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_next_sc.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_next_sc.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_next.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_next.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_ic_info_black_24dp.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/ic_info_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/menu_menu_main.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_favori_off_list.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_favori_off_list.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_channel_layout.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/channel_layout.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_play.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_play.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_default_info.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/default_info.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_activity_settings.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_music_playing.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/music_playing.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_previous_pressed.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_previous_pressed.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_music_control_minimize_layout.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/music_control_minimize_layout.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_favori_off.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_favori_off.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_random_on.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_random_on.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_default_simge.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/default_simge.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_stop.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_stop.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_next_pressed.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_next_pressed.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_search_icon.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/search_icon.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_previous.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_previous.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_ic_sync_black_24dp.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/ic_sync_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_favori_on.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_favori_on.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_logo1.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/logo1.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_favori_on_list.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_favori_on_list.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_fragment_channel_list.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/fragment_channel_list.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_music_control_layout.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/music_control_layout.xml"
+    }
+]

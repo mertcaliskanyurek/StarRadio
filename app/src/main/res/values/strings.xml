@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Star Radio</string>
+    <string name="packName">com.mosstech.StarRadio</string>
+
+    <string name="app_version_number">1.0</string>
+
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_search">Kanal Ara</string>
+    <string name="menu_vote">Oy Ver</string>
+    <string name="menu_about">Hakkında</string>
+    <string name="menu_close">Kapat</string>
+
+
+    <string name="settTextBaslik">Ayarlar</string>
+    <string name="settTextOtom">Açılışta otomatik başlat.</string>
+    <string name="settTextMobilVeri">Mobil verideyken şarkının bilgilerini indirmeye izin ver</string>
+    <string name="settTextArama">Arama sırasında çalmaya devam et.</string>
+
+    <string name="textToggleKap">KAPALI</string>
+    <string name="textToggleAc">AÇIK</string>
+
+    <string name="text_channel_name">Kanal İsmi</string>
+    <string name="text_playlist_name">Çalma Listesi</string>
+    
+    <string name="text_noti_title">Şimdi Çalınıyor</string>
+
+    <string name="catAraSonuc">Arama Sonuçları</string>
+
+    <string name="errMusicServ">Music Service Başlatılamadı</string>
+
+    <string name="tab_name_now_playing">Şimdi Çalınıyor</string>
+    <string name="tab_name_list_top_vote">En Çok Oylanan</string>
+    <string name="tab_name_list_your_country">Ülkendekiler</string>
+    <string name="tab_name_favorites">Favoriler</string>
+
+    <string name="err_no_store">Lütfen Market Uygulaması Bulunduğuna Emin Olun</string>
+    <string name="err_white_downloading_channels">Kanalları indirirken hata oluştu. Tekrar deneyin. </string>
+    <string name="err_while_playing_channel">Ops! Bir hata oluştu, lütfen tekrar deneyin veya sorunu bildirin.</string>
+</resources>
