@@ -41,7 +41,7 @@ public class MusicService extends Service implements
     //shuffle flag and random
     private boolean mShuffle;
     //preparing
-    private boolean mIsPreparing = false;
+    private boolean mIsPreparing;
     private String mPlayListName;
 
     //notification
@@ -266,7 +266,7 @@ public class MusicService extends Service implements
     }
 
     //toggle shuffle
-    public void changeShuffle() {
+    public void toggleShuffle() {
         mShuffle = !mShuffle;}
 
     public boolean getShuffle() { return mShuffle; }

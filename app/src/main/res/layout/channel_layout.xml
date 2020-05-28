@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
@@ -9,7 +8,7 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView_listItem_favorite"
         android:layout_marginRight="11dp"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
@@ -17,16 +16,17 @@
         android:layout_marginEnd="11dp" />
 
     <ImageView
+        android:id="@+id/imageView_listItem_logo"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:id="@+id/kanalSimgesiImageView"
-        android:layout_marginLeft="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginStart="10dp" />
+        app:srcCompat="@drawable/default_simge" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,20 +34,22 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
         android:text="Medium Text"
-        android:id="@+id/kanalIsmıTextView"
+        android:id="@+id/textView_listItem_channelName"
         android:layout_marginLeft="18dp"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/kanalSimgesiImageView"
-        android:layout_toEndOf="@+id/kanalSimgesiImageView"
+        android:layout_toRightOf="@+id/imageView_listItem_logo"
+        android:layout_toEndOf="@+id/imageView_listItem_logo"
         android:layout_marginStart="18dp" />
 
     <ImageView
+        android:id="@+id/imageView_listItem_musicPlaying"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/musicPlaying"
-        android:layout_alignBottom="@+id/kanalSimgesiImageView"
-        android:layout_toLeftOf="@+id/imageView3"
-        android:layout_toStartOf="@+id/imageView3"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/imageView_listItem_favorite"
+        android:layout_toLeftOf="@+id/imageView_listItem_favorite"
+        android:foregroundGravity="bottom|center"
         app:srcCompat="@drawable/music_playing" />
 
 

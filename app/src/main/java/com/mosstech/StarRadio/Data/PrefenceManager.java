@@ -45,9 +45,12 @@ public final class PrefenceManager {
         Map<String,?> allEntries = preferences.getAll();
         try {
             JSONObject channelObject;
+            ProxyChannel channel;
             for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
                 channelObject = new JSONObject(entry.getValue().toString());
-                channels.add(new ProxyChannel(channelObject));
+                channel = new ProxyChannel(channelObject);
+                channel.toggleFavorite();
+                channels.add(channel);
             }
         }catch (JSONException e)
         {

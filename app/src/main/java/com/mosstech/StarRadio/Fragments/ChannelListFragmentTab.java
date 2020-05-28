@@ -21,7 +21,7 @@ import java.util.List;
 public abstract class ChannelListFragmentTab extends Fragment implements RecyclerViewOnItemClickListener {
 
     protected View mRootView;
-    private ChannelAdapter mChannelAdapter;
+    protected ChannelAdapter mChannelAdapter;
     private String mListName = "";
     private ListFragmentOnItemClickListener mListener;
 
@@ -33,8 +33,8 @@ public abstract class ChannelListFragmentTab extends Fragment implements Recycle
         if(mChannelAdapter != null && mChannelAdapter.getChannelList() != null)
             onPrepared(mChannelAdapter.getChannelList());
         else {
-            prepareChannels();
             showProgress(true);
+            prepareChannels();
         }
         return mRootView;
     }
@@ -60,7 +60,7 @@ public abstract class ChannelListFragmentTab extends Fragment implements Recycle
     public void onItemClick(View view, int position) {
         if(mChannelAdapter != null && mChannelAdapter.getChannelList() != null)
         {
-            mChannelAdapter.updateViewAtPosition(position);
+            mChannelAdapter.updateViewAtPosition(position,true);
             if(mListener != null)
                 mListener.onListFragmentItemClick(mChannelAdapter.getChannelList(),mListName,position);
         }
@@ -75,7 +75,7 @@ public abstract class ChannelListFragmentTab extends Fragment implements Recycle
         else
             new PrefenceManager(mRootView.getContext()).removeFavorite(chn.getStationUuID());
 
-        mChannelAdapter.updateViewAtPosition(position);
+        mChannelAdapter.updateViewAtPosition(position, false);
     }
 
     public void setListener(ListFragmentOnItemClickListener listener) {

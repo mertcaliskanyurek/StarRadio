@@ -21,8 +21,12 @@
 
     <string name="text_channel_name">Kanal İsmi</string>
     <string name="text_playlist_name">Çalma Listesi</string>
-    
+
     <string name="text_noti_title">Şimdi Çalınıyor</string>
+
+    <string name="text_country">Ülke :</string>
+    <string name="text_language">Dil :</string>
+    <string name="text_web">Website :</string>
 
     <string name="catAraSonuc">Arama Sonuçları</string>
 
@@ -35,5 +39,5 @@
 
     <string name="err_no_store">Lütfen Market Uygulaması Bulunduğuna Emin Olun</string>
     <string name="err_white_downloading_channels">Kanalları indirirken hata oluştu. Tekrar deneyin. </string>
-    <string name="err_while_playing_channel">Ops! Bir hata oluştu, lütfen tekrar deneyin veya sorunu bildirin.</string>
+    <string name="err_while_playing_channel">Ops! Bir hata oluştu. Lütfen tekrar deneyin veya sorunu bildirin.</string>
 </resources>

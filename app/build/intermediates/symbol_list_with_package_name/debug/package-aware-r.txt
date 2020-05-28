@@ -1026,6 +1026,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_down
+drawable arrow_up
 drawable avd_hide_password
 drawable avd_show_password
 drawable button_favori_off
@@ -1106,6 +1108,7 @@ id add
 id alertTitle
 id all
 id always
+id appBarLayout
 id async
 id auto
 id barrier
@@ -1161,6 +1164,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fullScreenMusicControlLayout
 id ghost_view
 id gone
 id group_divider
@@ -1171,14 +1175,18 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView3
+id imageView
+id imageView_fullScreen_close
+id imageView_fullScreen_logo
+id imageView_listItem_favorite
+id imageView_listItem_logo
+id imageView_listItem_musicPlaying
 id include
+id include_maximize_player
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id kanalIsmıTextView
-id kanalSimgesiImageView
 id labeled
 id largeLabel
 id left
@@ -1191,7 +1199,6 @@ id masked
 id media_actions
 id menu_about
 id menu_close
-id menu_search
 id menu_settings
 id menu_vote
 id message
@@ -1200,7 +1207,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id musicPlaying
 id navigation_header_container
 id never
 id none
@@ -1282,6 +1288,12 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView_channel_name_minimize
+id textView_fullScreen_channelName
+id textView_fullScreen_country
+id textView_fullScreen_language
+id textView_fullScreen_listName
+id textView_fullScreen_website
+id textView_listItem_channelName
 id textView_playlist_name_minimize
 id text_input_password_toggle
 id textinput_counter
@@ -1360,6 +1372,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_player_full_screen
 layout activity_settings
 layout channel_layout
 layout design_bottom_navigation_item
@@ -1480,8 +1493,11 @@ string tab_name_now_playing
 string textToggleAc
 string textToggleKap
 string text_channel_name
+string text_country
+string text_language
 string text_noti_title
 string text_playlist_name
+string text_web
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

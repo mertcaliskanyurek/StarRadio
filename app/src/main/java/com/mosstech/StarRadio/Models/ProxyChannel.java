@@ -10,7 +10,7 @@ public final class ProxyChannel implements IChannel, JsonConvertable, Parcelable
 
     private JSONObject jsonObject;
     private Channel realChannel = null;
-
+    private boolean isFavorite = false;
     public ProxyChannel(JSONObject object) {
         jsonObject = object;
     }
@@ -162,18 +162,12 @@ public final class ProxyChannel implements IChannel, JsonConvertable, Parcelable
 
     @Override
     public boolean getIsFavorite() {
-        if(realChannel == null)
-            realChannel = new Channel(jsonObject);
-
-        return realChannel.getIsFavorite();
+        return isFavorite;
     }
 
     @Override
     public void toggleFavorite() {
-        if(realChannel == null)
-            realChannel = new Channel(jsonObject);
-
-        realChannel.toggleFavorite();
+        isFavorite = !isFavorite;
     }
 
     // JsonConvertable Interface

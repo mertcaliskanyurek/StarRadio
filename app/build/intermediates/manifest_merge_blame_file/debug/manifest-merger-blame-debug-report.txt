@@ -11,107 +11,113 @@
 9-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:6:5-81
-12-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:6:22-78
+12-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:7:5-81
+12-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:7:22-78
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:7:5-79
-13-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:7:22-76
+13-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:8:5-79
+13-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:8:22-76
 14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-14-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:8:5-75
-14-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:8:22-72
+14-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:9:5-75
+14-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:9:22-72
 15    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-15-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:9:5-81
-15-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:9:22-78
+15-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:10:22-78
 16    <uses-permission android:name="android.permission.STORAGE" />
-16-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:10:5-66
-16-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:10:22-63
+16-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:11:5-66
+16-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:11:22-63
 17    <uses-permission android:name="android.permission.WAKE_LOCK" />
-17-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:11:5-68
-17-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:11:22-65
+17-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:12:5-68
+17-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:12:22-65
 18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-18-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:12:5-76
-18-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:12:22-74
+18-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:13:5-77
+18-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:13:22-74
 19
 20    <application
-20-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:14:5-51:19
+20-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:15:5-51:19
 21        android:allowBackup="true"
-21-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:15:9-35
+21-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:16:9-35
 22        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
 22-->[com.android.support:support-compat:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/f1491a81a65d4033a56d6549564e765e/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 23        android:configChanges="orientation|screenSize"
-23-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:16:9-55
+23-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:17:9-55
 24        android:debuggable="true"
 25        android:icon="@drawable/logo1"
-25-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:17:9-39
+25-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:18:9-39
 26        android:label="@string/app_name"
-26-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:18:9-41
+26-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:19:9-41
 27        android:supportsRtl="true"
 27-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:20:9-35
 28        android:testOnly="true"
 29        android:theme="@style/MaterialTheme"
 29-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:21:9-45
 30        android:usesCleartextTraffic="true" >
-30-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:19:9-44
-31        <activity android:name="com.mosstech.StarRadio.MainActivity" >
-31-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:22:9-29:20
-31-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:22:19-47
-32            <intent-filter>
-32-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:23:13-27:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:24:17-69
-33-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:24:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:17-77
-35-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:27-74
-36            </intent-filter>
-37        </activity>
-38        <activity android:name="com.mosstech.StarRadio.KesfetActivity" />
-38-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:30:9-52
-38-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:30:19-49
-39        <activity android:name="com.mosstech.StarRadio.SearchActivity" />
-39-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:31:9-52
-39-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:31:19-49
-40
-41        <service android:name="com.mosstech.StarRadio.Service.MusicService" />
-41-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:9-57
-41-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:18-54
-42
-43        <receiver
-43-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:35:9-45:20
-44            android:name="com.mosstech.StarRadio.Receivers.PhoneChangeReceiver"
-44-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:36:13-58
-45            android:enabled="true"
-45-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:37:13-35
-46            android:exported="true"
-46-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:38:13-36
-47            android:label="NetworkChangeReceiver" >
-47-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:39:13-50
-48            <intent-filter>
-48-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:40:13-44:29
-49                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-49-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:17-79
-49-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:25-76
-50                <action android:name="android.intent.action.PHONE_STATE" />
-50-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:17-76
-50-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:25-73
-51                <action android:name="android.intent.action.HEADSET_PLUG" />
-51-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:17-77
-51-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:25-74
-52            </intent-filter>
-53        </receiver>
-54
-55        <activity
-55-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:47:9-50:47
-56            android:name="com.mosstech.StarRadio.SettingsActivity"
-56-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:48:13-45
-57            android:label="Ayarlar"
-57-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:49:13-36
-58            android:theme="@style/AppTheme" />
-58-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:50:13-44
-59    </application>
-60
-61</manifest>
+30-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:22:9-44
+31        <activity android:name="com.mosstech.StarRadio.PlayerFullScreenActivity" />
+31-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:24:9-62
+31-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:24:19-59
+32        <activity android:name="com.mosstech.StarRadio.MainActivity" >
+32-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:9-31:20
+32-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:19-47
+33            <intent-filter>
+33-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:26:13-30:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:27:17-69
+34-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:27:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:29:17-77
+36-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:29:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <service android:name="com.mosstech.StarRadio.Service.MusicService" />
+40-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:9-57
+40-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:18-54
+41
+42        <receiver
+42-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:35:9-45:20
+43            android:name="com.mosstech.StarRadio.Receivers.PhoneChangeReceiver"
+43-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:36:13-58
+44            android:enabled="true"
+44-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:37:13-35
+45            android:exported="true"
+45-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:38:13-36
+46            android:label="NetworkChangeReceiver" >
+46-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:39:13-50
+47            <intent-filter>
+47-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:40:13-44:29
+48                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+48-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:17-79
+48-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:25-76
+49                <action android:name="android.intent.action.PHONE_STATE" />
+49-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:17-76
+49-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:25-73
+50                <action android:name="android.intent.action.HEADSET_PLUG" />
+50-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:17-77
+50-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:25-74
+51            </intent-filter>
+52        </receiver>
+53
+54        <activity
+54-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:47:9-50:47
+55            android:name="com.mosstech.StarRadio.SettingsActivity"
+55-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:48:13-45
+56            android:label="Ayarlar"
+56-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:49:13-36
+57            android:theme="@style/AppTheme" />
+57-->/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:50:13-44
+58
+59        <provider
+59-->[com.squareup.picasso:picasso:2.71828] /Users/mert/.gradle/caches/transforms-2/files-2.1/8dff8264fbf2f7a6e0c3e8da63688623/picasso-2.71828/AndroidManifest.xml:8:9-11:40
+60            android:name="com.squareup.picasso.PicassoProvider"
+60-->[com.squareup.picasso:picasso:2.71828] /Users/mert/.gradle/caches/transforms-2/files-2.1/8dff8264fbf2f7a6e0c3e8da63688623/picasso-2.71828/AndroidManifest.xml:9:13-64
+61            android:authorities="com.mosstech.radiostar.com.squareup.picasso"
+61-->[com.squareup.picasso:picasso:2.71828] /Users/mert/.gradle/caches/transforms-2/files-2.1/8dff8264fbf2f7a6e0c3e8da63688623/picasso-2.71828/AndroidManifest.xml:10:13-72
+62            android:exported="false" />
+62-->[com.squareup.picasso:picasso:2.71828] /Users/mert/.gradle/caches/transforms-2/files-2.1/8dff8264fbf2f7a6e0c3e8da63688623/picasso-2.71828/AndroidManifest.xml:11:13-37
+63    </application>
+64
+65</manifest>

@@ -29,6 +29,7 @@
         android:testOnly="true"
         android:theme="@style/MaterialTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.mosstech.StarRadio.PlayerFullScreenActivity" />
         <activity android:name="com.mosstech.StarRadio.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,8 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mosstech.StarRadio.KesfetActivity" />
-        <activity android:name="com.mosstech.StarRadio.SearchActivity" />
 
         <service android:name="com.mosstech.StarRadio.Service.MusicService" />
 
@@ -57,6 +56,11 @@
             android:name="com.mosstech.StarRadio.SettingsActivity"
             android:label="Ayarlar"
             android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.mosstech.radiostar.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

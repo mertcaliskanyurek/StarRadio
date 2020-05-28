@@ -16,6 +16,10 @@
         "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_next_sc.xml"
     },
     {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_activity_player_full_screen.xml.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/activity_player_full_screen.xml"
+    },
+    {
         "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_button_next.png.flat",
         "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/button_next.png"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_default_info.png.flat",
         "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/default_info.png"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_arrow_down.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/arrow_down.png"
     },
     {
         "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_activity_settings.xml.flat",
@@ -130,6 +138,10 @@
     {
         "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_fragment_channel_list.xml.flat",
         "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/layout/fragment_channel_list.xml"
+    },
+    {
+        "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/drawable_arrow_up.png.flat",
+        "source": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/res/drawable/arrow_up.png"
     },
     {
         "merged": "/Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/build/intermediates/res/merged/debug/layout_music_control_layout.xml.flat",

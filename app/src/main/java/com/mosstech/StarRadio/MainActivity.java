@@ -1,36 +1,26 @@
 package com.mosstech.StarRadio;
 
 import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.IBinder;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.mosstech.StarRadio.Adapters.ChannelAdapter;
 import com.mosstech.StarRadio.Fragments.ChannelListFragmentTab;
 import com.mosstech.StarRadio.Fragments.ListByFavoritesFragmentTab;
 import com.mosstech.StarRadio.Fragments.ListByCurrCountryFragmentTab;
 import com.mosstech.StarRadio.Fragments.ListByVotesFragmentTab;
 import com.mosstech.StarRadio.Fragments.ListFragmentOnItemClickListener;
 import com.mosstech.StarRadio.Models.IChannel;
-import com.mosstech.StarRadio.Service.MusicService;
 import com.mosstech.StarRadio.Adapters.PagerAdapter;
-import com.mosstech.StarRadio.Service.MusicServiceListener;
 
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,11 +30,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements MusicServiceListener, ListFragmentOnItemClickListener {
+public class MainActivity extends BaseMusicServiceActivity implements ListFragmentOnItemClickListener {
 
-    //service
-    private MusicService mMusicService = null;
-    private ChannelAdapter mAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +40,9 @@ public class MainActivity extends AppCompatActivity implements MusicServiceListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        startService();
-        bindService(new Intent(this, MusicService.class), serviceConnection, 0);
-
-        //then init views
+        //first start and bind service then init views
         initTabs();
-
-    }//end onCreate
+    }
 
     private void initTabs()
     {
@@ -128,64 +111,10 @@ public class MainActivity extends AppCompatActivity implements MusicServiceListe
         return tabs;
     }
 
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if(mMusicService == null)
-            bindService(new Intent(this, MusicService.class), serviceConnection, Context.BIND_AUTO_CREATE);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        if(mMusicService != null && (!mMusicService.isPlaying() && !mMusicService.isPreparing()))
-            stopService();
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
-
-    public void handleNextClick(View v)
-    {
-        if (mMusicService != null) {
-            mMusicService.playNext();
-        }
-    }
-
-    public void handlePreviousClick(View v)
-    {
-        if(mMusicService != null)
-        {
-            mMusicService.playPrev();
-        }
-    }
-
-    public void handlePlayClick(View v)
-    {
-        if(mMusicService != null){
-            if(mMusicService.isPreparing() || mMusicService.isPlaying()) {
-                mMusicService.stopPlayer();
-                initViews();
-            }
-            else{
-                mMusicService.playChannel();
-                initViews();
-            }
-        }
     }
 
     //MENU
@@ -195,9 +124,6 @@ public class MainActivity extends AppCompatActivity implements MusicServiceListe
 
         switch (id) {
             case R.id.menu_about:
-                break;
-            case R.id.menu_search:
-                //startActivity(new Intent(getApplicationContext(), SearchActivity.class));
                 break;
             case R.id.menu_vote:
                 try {
@@ -218,55 +144,8 @@ public class MainActivity extends AppCompatActivity implements MusicServiceListe
         return true;
     }
 
-    private void startService()
-    {
-        Intent serviceIntent = new Intent(this, MusicService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-            startForegroundService(serviceIntent);
-        else
-            startService(serviceIntent);
-    }
-
-    private void stopService()
-    {
-        mMusicService.stopService();
-        unbindService(serviceConnection);
-    }
-
-    public final ServiceConnection serviceConnection = new ServiceConnection() {
-        @Override
-        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            Log.d("Music Connection","onServiceCOnttected");
-            MusicService.MusicBinder binder = (MusicService.MusicBinder)iBinder;
-            //get service
-            mMusicService = binder.getService();
-            //pass list
-            mMusicService.setListener(MainActivity.this);
-            initViews();
-        }
-
-        @Override
-        public void onServiceDisconnected(ComponentName componentName) {
-            Log.d("Music Connection","onServiceDisconnected");
-        }
-    };
-
     @Override
-    public void onPreparing() {
-        initViews();
-    }
-
-    @Override
-    public void onStarted() {
-        initViews();
-    }
-
-    @Override
-    public void onError(String error) {
-        initViews();
-    }
-
-    private void initViews()
+    protected void initViews()
     {
         if(mMusicService != null)
         {
@@ -287,7 +166,11 @@ public class MainActivity extends AppCompatActivity implements MusicServiceListe
             ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar_music_control_minimize);
             progressBar.setVisibility(mMusicService.isPreparing()?View.VISIBLE:View.INVISIBLE);
         }
+    }
 
+    public void handleFullScreenPlayerClick(View v)
+    {
+        startActivity(new Intent(this,PlayerFullScreenActivity.class));
     }
 
     @Override

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.mosstech.StarRadio.Data.PrefenceManager;
 import com.mosstech.StarRadio.Models.IChannel;
 import com.mosstech.StarRadio.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -59,7 +60,12 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
             else
                 channelViewHolder.ivPlaying.setVisibility(View.INVISIBLE);
 
-            channelViewHolder.ivLogo.setImageResource(R.drawable.default_simge);
+            //prepare logo
+            Picasso.get()
+                    .load(chn.getFavicon())
+                    .placeholder(R.drawable.default_simge)
+                    .error(R.drawable.default_simge)
+                    .into(channelViewHolder.ivLogo);
         }
     }
 
@@ -76,12 +82,14 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
             return 0;
     }
 
-    public void updateViewAtPosition(int position)
+    public void updateViewAtPosition(int position, boolean updateForPlay)
     {
-        //remove playing icon on channel
-        notifyItemChanged(mCurrPlayingPosition);
-        mCurrPlayingPosition = position;
-        //add playing icon on clicked channel
+        if(updateForPlay) {
+            //remove playing icon on channel
+            notifyItemChanged(mCurrPlayingPosition);
+            mCurrPlayingPosition = position;
+        }
+        //update clicked channel
         notifyItemChanged(position);
     }
 
@@ -96,15 +104,17 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
         public ChannelViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
-            tvChnName = (TextView) itemView.findViewById(R.id.kanalIsmıTextView);
-            ivLogo = (ImageView) itemView.findViewById(R.id.kanalSimgesiImageView);
-            ivPlaying = (ImageView) itemView.findViewById(R.id.musicPlaying);
 
-            ivFavorite = (ImageView) itemView.findViewById(R.id.imageView3);
+            tvChnName = (TextView) itemView.findViewById(R.id.textView_listItem_channelName);
+            ivLogo = (ImageView) itemView.findViewById(R.id.imageView_listItem_logo);
+
+            ivPlaying = (ImageView) itemView.findViewById(R.id.imageView_listItem_musicPlaying);
+
+            ivFavorite = (ImageView) itemView.findViewById(R.id.imageView_listItem_favorite);
             ivFavorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mListener.onItemFavoriteClick(v,getAdapterPosition());
+                    mListener.onItemFavoriteClick(v, getAdapterPosition());
                 }
             });
         }
