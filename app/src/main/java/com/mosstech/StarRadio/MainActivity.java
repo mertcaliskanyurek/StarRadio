@@ -133,6 +133,8 @@ public class MainActivity extends BaseMusicServiceActivity implements ListFragme
                     Toast.makeText(getApplicationContext(),getString(R.string.err_no_store),Toast.LENGTH_SHORT).show();
                 }
                 break;
+            case R.id.menu_search:
+                break;
             case R.id.menu_settings:
                 startActivity(new Intent(getApplicationContext(), SettingsActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
                 break;

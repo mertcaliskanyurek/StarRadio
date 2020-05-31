@@ -5,6 +5,8 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.support.v4.app.NotificationCompat;
 
+import com.mosstech.StarRadio.R;
+
 public final class BelowApi26Strategy implements NotificationStrategy {
     private Context mContext;
 
@@ -13,9 +15,9 @@ public final class BelowApi26Strategy implements NotificationStrategy {
     }
 
     @Override
-    public Notification buildNotification(String stitle, String text, int smallIcon) {
+    public Notification buildNotification(String stitle, String text, String icon, boolean isPlaying) {
         return new NotificationCompat.Builder(mContext)
-                .setSmallIcon(smallIcon)
+                .setSmallIcon(R.drawable.default_simge)
                 .setContentTitle(stitle)
                 .setContentText(text)
                 .build();

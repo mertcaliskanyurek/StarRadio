@@ -26,6 +26,7 @@ public class PlayerFullScreenActivity extends BaseMusicServiceActivity {
             TextView chnName = findViewById(R.id.textView_fullScreen_channelName);
             TextView listName = findViewById(R.id.textView_fullScreen_listName);
             ImageView iv_Play = findViewById(R.id.buttonPlay);
+            ImageView iv_Shuffle = findViewById(R.id.button_shuffle);
             ProgressBar progressBar = findViewById(R.id.progressBar_mp_preparing);
 
 
@@ -40,6 +41,7 @@ public class PlayerFullScreenActivity extends BaseMusicServiceActivity {
             listName.setText(mMusicService.getPlayListName());
 
             progressBar.setVisibility(mMusicService.isPreparing()?View.VISIBLE:View.INVISIBLE);
+            iv_Shuffle.setImageResource(mMusicService.getShuffle()?R.drawable.button_random_on:R.drawable.button_random_off);
 
             final IChannel channel = mMusicService.getChannel();
             if(channel != null) {
@@ -47,6 +49,10 @@ public class PlayerFullScreenActivity extends BaseMusicServiceActivity {
                 TextView country = findViewById(R.id.textView_fullScreen_country);
                 TextView webSite = findViewById(R.id.textView_fullScreen_website);
                 ImageView logo = findViewById(R.id.imageView_fullScreen_logo);
+                ImageView favorite = findViewById(R.id.button_favorite);
+
+                favorite.setImageResource(channel.getIsFavorite()?R.drawable.button_favorite_on:R.drawable.button_favorite_off);
+
                 language.setText(channel.getLanguage());
                 country.setText(channel.getCountry());
                 webSite.setText(channel.getHomepage());
@@ -62,7 +68,7 @@ public class PlayerFullScreenActivity extends BaseMusicServiceActivity {
                         .load(channel.getFavicon())
                         .placeholder(R.drawable.default_info)
                         .error(R.drawable.default_info)
-                        .fit().centerCrop()
+                        .fit().centerInside()
                         .into(logo);
             }
         }

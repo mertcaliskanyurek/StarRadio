@@ -1030,10 +1030,8 @@ drawable arrow_down
 drawable arrow_up
 drawable avd_hide_password
 drawable avd_show_password
-drawable button_favori_off
-drawable button_favori_off_list
-drawable button_favori_on
-drawable button_favori_on_list
+drawable button_favorite_off
+drawable button_favorite_on
 drawable button_next
 drawable button_next_pressed
 drawable button_next_sc
@@ -1181,6 +1179,12 @@ id imageView_fullScreen_logo
 id imageView_listItem_favorite
 id imageView_listItem_logo
 id imageView_listItem_musicPlaying
+id imageView_notification_chnName
+id imageView_notification_chnlogo
+id imageView_notification_next
+id imageView_notification_play
+id imageView_notification_playlistName
+id imageView_notification_previous
 id include
 id include_maximize_player
 id info
@@ -1199,6 +1203,7 @@ id masked
 id media_actions
 id menu_about
 id menu_close
+id menu_search
 id menu_settings
 id menu_vote
 id message
@@ -1396,6 +1401,7 @@ layout music_control_layout
 layout music_control_minimize_layout
 layout notification_action
 layout notification_action_tombstone
+layout notification_layout
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media
@@ -1414,7 +1420,6 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_main
-mipmap ic_launcher
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1495,8 +1500,11 @@ string textToggleKap
 string text_channel_name
 string text_country
 string text_language
+string text_next
 string text_noti_title
+string text_play
 string text_playlist_name
+string text_previous
 string text_web
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

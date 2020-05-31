@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:id="@+id/fullScreenMusicControlLayout"
     tools:context=".PlayerFullScreenActivity">
 
@@ -15,83 +17,74 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:onClick="handleCloseFullScrClick"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_down" />
+        android:src="@drawable/arrow_down" />
 
-    <TextView
-        android:id="@+id/textView_fullScreen_channelName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_channel_name"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView_fullScreen_logo"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_fullScreen_close" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="40dp">
 
-    <TextView
-        android:id="@+id/textView_fullScreen_listName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/text_playlist_name"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView_fullScreen_channelName"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fullScreen_channelName" />
+        <TextView
+            android:id="@+id/textView_fullScreen_channelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_channel_name"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp"/>
 
-    <ImageView
-        android:id="@+id/imageView_fullScreen_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:contentDescription="@string/tab_name_favorites"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fullScreen_website"
-        app:srcCompat="@drawable/default_info" />
+        <TextView
+            android:id="@+id/textView_fullScreen_listName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_playlist_name"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp"/>
 
-    <TextView
-        android:id="@+id/textView_fullScreen_language"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/text_language"
-        android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintStart_toStartOf="@+id/textView_fullScreen_listName"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fullScreen_listName" />
+        <TextView
+            android:id="@+id/textView_fullScreen_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_language"
+            android:textColor="?android:attr/textColorPrimary"/>
 
-    <TextView
-        android:id="@+id/textView_fullScreen_country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/text_country"
-        android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintStart_toStartOf="@+id/textView_fullScreen_language"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fullScreen_language" />
+        <TextView
+            android:id="@+id/textView_fullScreen_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_country"
+            android:textColor="?android:attr/textColorPrimary"/>
 
-    <TextView
-        android:id="@+id/textView_fullScreen_website"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/text_web"
-        android:textColor="?android:attr/textColorLink"
-        app:layout_constraintStart_toStartOf="@+id/textView_fullScreen_country"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fullScreen_country" />
+        <TextView
+            android:id="@+id/textView_fullScreen_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_web"
+            android:textColor="?android:attr/textColorLink" />
+
+        <ImageView
+            android:id="@+id/imageView_fullScreen_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/tab_name_favorites"
+            android:src="@drawable/default_info" />
+
+    </LinearLayout>
 
     <include
         android:id="@+id/include_maximize_player"
         layout="@layout/music_control_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="bottom"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

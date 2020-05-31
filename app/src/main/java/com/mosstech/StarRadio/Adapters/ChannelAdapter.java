@@ -53,19 +53,21 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
             channelViewHolder.tvChnName.setText(mChannelList.get(position).getName());
             //init favorite iv
             channelViewHolder.ivFavorite.setImageResource(chn.getIsFavorite()?
-                    R.drawable.button_favori_on_list:R.drawable.button_favori_off_list);
+                    R.drawable.button_favorite_on:R.drawable.button_favorite_off);
 
             if(mCurrPlayingPosition == position)
                 channelViewHolder.ivPlaying.setVisibility(View.VISIBLE);
             else
                 channelViewHolder.ivPlaying.setVisibility(View.INVISIBLE);
 
-            //prepare logo
-            Picasso.get()
-                    .load(chn.getFavicon())
-                    .placeholder(R.drawable.default_simge)
-                    .error(R.drawable.default_simge)
-                    .into(channelViewHolder.ivLogo);
+            if(chn.getFavicon() != null && !chn.getFavicon().equals("")) {
+                //prepare logo
+                Picasso.get()
+                        .load(chn.getFavicon())
+                        .placeholder(R.drawable.default_simge)
+                        .error(R.drawable.default_simge)
+                        .into(channelViewHolder.ivLogo);
+            }
         }
     }
 

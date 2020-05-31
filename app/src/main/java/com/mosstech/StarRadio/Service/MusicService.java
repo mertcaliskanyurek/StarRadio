@@ -4,14 +4,12 @@ import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.media.MediaDataSource;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
-import android.os.PowerManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.mosstech.StarRadio.Models.IChannel;
 import com.mosstech.StarRadio.Notification.AboveApi26Strategy;
@@ -19,13 +17,16 @@ import com.mosstech.StarRadio.Notification.BelowApi26Strategy;
 import com.mosstech.StarRadio.Notification.NotificationStrategy;
 import com.mosstech.StarRadio.R;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
 
 public class MusicService extends Service implements
         MediaPlayer.OnPreparedListener, MediaPlayer.OnErrorListener{
+
+    public static final String ACTION_PLAY = "ACTION_PLAY";
+    public static final String ACTION_NEXT = "ACTION_PLAY_NEXT";
+    public static final String ACTION_PREVIOUS = "ACTION_PLAY_PREVIOUS";
 
     private static final String TAG = MusicService.class.getSimpleName();
 
@@ -92,16 +93,30 @@ public class MusicService extends Service implements
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        String action = intent.getAction();
+        if(action != null)
+        {
+            switch (action){
+                case ACTION_PLAY:
+                    if(isPlaying()) {
+                        stopPlayer();
+                        mNotificationStrategy.notify(NOTIFY_ID,buildNotification());
+                    }
+                    else
+                        playChannel();
+                    break;
+                case ACTION_NEXT:
+                    playNext();
+                    break;
+                case ACTION_PREVIOUS:
+                    playPrev();
+                    break;
+            }
+        }
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
-            String text = "";
-            if(mChannels != null && mChannels.size() > 0)
-                text = mChannels.get(mChnIndex).getName();
-
-            Notification notification = mNotificationStrategy.
-                    buildNotification(getString(R.string.text_noti_title),text,R.drawable.default_info);
-
-            startForeground(NOTIFY_ID,notification);
+            startForeground(NOTIFY_ID,buildNotification());
 
             Log.i(TAG,"Service Started with START_NOT_STICKY! Receiver registered");
             return START_NOT_STICKY;
@@ -116,10 +131,7 @@ public class MusicService extends Service implements
         //start playback
         mIsPreparing = false;
         mp.start();
-        String text = mChannels.get(mChnIndex).getName();
-        Notification noti = mNotificationStrategy
-                .buildNotification(getString(R.string.text_noti_title),text,R.drawable.default_simge);
-        mNotificationStrategy.notify(NOTIFY_ID,noti);
+        mNotificationStrategy.notify(NOTIFY_ID,buildNotification());
         if(mListener != null)
             mListener.onStarted();
     }
@@ -128,13 +140,14 @@ public class MusicService extends Service implements
     public boolean onError(MediaPlayer mp, int what, int extra) {
         Log.v(TAG, "Playback Error");
         stopPlayer();
+        mNotificationStrategy.notify(NOTIFY_ID,buildNotification());
+        Toast.makeText(this,R.string.err_while_playing_channel,Toast.LENGTH_SHORT).show();
         if(mListener != null)
             mListener.onError("Playback Error");
         return false;
     }
 
     public void initMusicPlayer(){
-
         mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mPlayer.setVolume(100,100);
         //set listeners
@@ -168,7 +181,7 @@ public class MusicService extends Service implements
     }
 
     public void stopPlayer() {
-        if(mPlayer.isPlaying())
+        if(isPlaying())
             mPlayer.stop();
         mPlayer.reset();
         mIsPreparing = false;
@@ -225,6 +238,19 @@ public class MusicService extends Service implements
         stopSelf();
     }
 
+    private Notification buildNotification()
+    {
+        String chnName = null;
+        String chnIcon = null;
+
+        if(mChannels != null && mChannels.size() > 0 && mChnIndex >= 0) {
+            chnName = mChannels.get(mChnIndex).getName();
+            chnIcon = mChannels.get(mChnIndex).getFavicon();
+        }
+
+        return  mNotificationStrategy.buildNotification(chnName,mPlayListName,chnIcon,isPlaying());
+    }
+
     //play channel
     public void playChannel(int indexOfList){
         this.mChnIndex = indexOfList;
@@ -240,7 +266,7 @@ public class MusicService extends Service implements
 
     public void playChannel(List<IChannel> list, String playList, int chnIndex)
     {
-        if(mPlayer.isPlaying() || mIsPreparing)
+        if(isPlaying() || isPreparing())
             stopPlayer();
         mChannels = list;
         mChnIndex = chnIndex;

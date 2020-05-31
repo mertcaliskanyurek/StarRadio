@@ -76,7 +76,6 @@ public abstract class BaseMusicServiceActivity extends AppCompatActivity impleme
 
     @Override
     public void onError(String error) {
-        Toast.makeText(this,R.string.err_while_playing_channel,Toast.LENGTH_SHORT).show();
         initViews();
     }
 
@@ -112,11 +111,11 @@ public abstract class BaseMusicServiceActivity extends AppCompatActivity impleme
             if(channel.getIsFavorite())
             {
                 new PrefenceManager(this).saveChannelToFavorite(channel);
-                ((ImageView)view).setImageResource(R.drawable.button_favori_on);
+                ((ImageView)view).setImageResource(R.drawable.button_favorite_on);
             }
             else {
                 new PrefenceManager(this).removeFavorite(channel.getStationUuID());
-                ((ImageView)view).setImageResource(R.drawable.button_favori_off);
+                ((ImageView)view).setImageResource(R.drawable.button_favorite_off);
             }
         }
     }

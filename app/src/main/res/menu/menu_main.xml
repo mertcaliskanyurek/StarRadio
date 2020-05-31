@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:starradio="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-   <!-- <item android:id="@+id/menu_search"
+   <item android:id="@+id/menu_search"
         android:icon="@drawable/search_icon"
         android:title="@string/menu_search"
         starradio:showAsAction="ifRoom"
-        /> -->
+        />
 
     <item android:id="@+id/menu_vote"
         android:title="@string/menu_vote"

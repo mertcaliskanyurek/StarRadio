@@ -28,6 +28,10 @@
     <string name="text_language">Dil :</string>
     <string name="text_web">Website :</string>
 
+    <string name="text_play">Oynat</string>
+    <string name="text_next">Sonraki</string>
+    <string name="text_previous">Önceki</string>
+
     <string name="catAraSonuc">Arama Sonuçları</string>
 
     <string name="errMusicServ">Music Service Başlatılamadı</string>
