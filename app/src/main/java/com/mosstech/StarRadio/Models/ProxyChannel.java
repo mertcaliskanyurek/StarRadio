@@ -2,6 +2,7 @@ package com.mosstech.StarRadio.Models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -177,6 +178,12 @@ public final class ProxyChannel implements IChannel, JsonConvertable, Parcelable
     @Override
     public String getJsonString() {
         return jsonObject.toString();
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getName();
     }
 
     // Parcelable Interface

@@ -1,5 +1,6 @@
 package com.mosstech.StarRadio.Adapters;
 
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -9,7 +10,7 @@ import java.util.List;
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
     private List<Fragment> mTabs;
-    public PagerAdapter(FragmentManager fm, List<Fragment> tabs) {
+    public PagerAdapter(@NonNull FragmentManager fm,@NonNull List<Fragment> tabs) {
         super(fm);
         mTabs = tabs;
     }
@@ -23,5 +24,6 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return mTabs.size();
     }
+
 
 }

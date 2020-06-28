@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mosstech.StarRadio.Data.PrefenceManager;
 import com.mosstech.StarRadio.Models.IChannel;
 import com.mosstech.StarRadio.R;
 import com.squareup.picasso.Picasso;
@@ -19,19 +18,12 @@ import java.util.List;
 /**
  * Created by Mert on 30.08.2016.
  */
-public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelViewHolder> {
+public class ChannelAdapter extends RecyclerViewAdapter<IChannel, ChannelAdapter.ChannelViewHolder> {
 
-    private List<IChannel> mChannelList;
-    //for db helper
-    private Context mContext;
     private int mCurrPlayingPosition=-1;
 
-    private RecyclerViewOnItemClickListener mListener;
-
     public ChannelAdapter(@NonNull Context context, @NonNull List<IChannel> channels,@NonNull RecyclerViewOnItemClickListener listener){
-        mChannelList = channels;
-        mContext = context;
-        mListener = listener;
+        super(context,channels,listener);
     }
 
     @NonNull
@@ -40,17 +32,16 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService
                 (Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.channel_layout,viewGroup, false);
-
         return new ChannelViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ChannelViewHolder channelViewHolder, int position) {
-        final IChannel chn = mChannelList.get(position);
+        final IChannel chn = mDataList.get(position);
 
         if(chn != null)
         {
-            channelViewHolder.tvChnName.setText(mChannelList.get(position).getName());
+            channelViewHolder.tvChnName.setText(mDataList.get(position).getName());
             //init favorite iv
             channelViewHolder.ivFavorite.setImageResource(chn.getIsFavorite()?
                     R.drawable.button_favorite_on:R.drawable.button_favorite_off);
@@ -71,19 +62,6 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
         }
     }
 
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    @Override
-    public int getItemCount() {
-        if(mChannelList !=null)
-            return mChannelList.size();
-        else
-            return 0;
-    }
-
     public void updateViewAtPosition(int position, boolean updateForPlay)
     {
         if(updateForPlay) {
@@ -95,15 +73,11 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
         notifyItemChanged(position);
     }
 
-    public List<IChannel> getChannelList() {
-        return mChannelList;
-    }
-
     final class ChannelViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView tvChnName;
         ImageView ivFavorite, ivLogo, ivPlaying;
 
-        public ChannelViewHolder(@NonNull View itemView) {
+        ChannelViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
 
@@ -116,7 +90,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
             ivFavorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mListener.onItemFavoriteClick(v, getAdapterPosition());
+                    mListener.onItemClick(v, getAdapterPosition());
                 }
             });
         }
@@ -124,7 +98,14 @@ public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ChannelV
         @Override
         public void onClick(View v) {
             //add playing icon on clicked channel
-            mListener.onItemClick(v, getAdapterPosition());
+            int pos = getAdapterPosition();
+            if(isBackedUp())
+            {
+                IChannel curr = getRealDataList().get(pos);
+                mListener.onItemClick(v, getDataList().indexOf(curr));
+            }
+            else
+                mListener.onItemClick(v, pos);
         }
     }
 

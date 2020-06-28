@@ -16,23 +16,26 @@ public class ListByFavoritesFragmentTab extends ChannelListFragmentTab {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedIstanseState)
     {
-        mRootView = inflater.inflate(R.layout.fragment_channel_list,container,false);
+        View root = inflater.inflate(R.layout.fragment_list,container,false);
+        setRootView(root);
         //do not cache favorite channel list. It might be change in other tabs
         prepareChannels();
-        return mRootView;
+        return root;
     }
 
     @Override
     protected void prepareChannels() {
-        List<IChannel> channels = new PrefenceManager(mRootView.getContext()).getFavorites();
+        List<IChannel> channels = new PrefenceManager(getRootViewContext()).getFavorites();
         onPrepared(channels);
     }
 
     @Override
-    public void onItemFavoriteClick(View favoriteView, int position) {
-        super.onItemFavoriteClick(favoriteView, position);
-        // on favorites fragment click on star means remove from favorites list
-        mChannelAdapter.getChannelList().remove(position);
-        mChannelAdapter.notifyItemRemoved(position);
+    public void onItemClick(View view, int position) {
+        super.onItemClick(view, position);
+        if(view.getId() == R.id.imageView_listItem_favorite)
+        {
+            getChannelAdapter().getDataList().remove(position);
+            getChannelAdapter().notifyItemRemoved(position);
+        }
     }
 }

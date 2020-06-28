@@ -1,5 +1,6 @@
 package com.mosstech.StarRadio.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -20,18 +21,19 @@ import java.util.List;
 
 public abstract class ChannelListFragmentTab extends Fragment implements RecyclerViewOnItemClickListener {
 
-    protected View mRootView;
-    protected ChannelAdapter mChannelAdapter;
+    private View mRootView;
+    private ChannelAdapter mChannelAdapter;
     private String mListName = "";
-    private ListFragmentOnItemClickListener mListener;
+
+    private ChannelListOnItemClickListener mListener;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedIstanseState)
     {
-        mRootView = inflater.inflate(R.layout.fragment_channel_list,container,false);
+        mRootView = inflater.inflate(R.layout.fragment_list,container,false);
 
-        if(mChannelAdapter != null && mChannelAdapter.getChannelList() != null)
-            onPrepared(mChannelAdapter.getChannelList());
+        if(mChannelAdapter != null && mChannelAdapter.getDataList() != null)
+            onPrepared(mChannelAdapter.getDataList());
         else {
             showProgress(true);
             prepareChannels();
@@ -56,29 +58,56 @@ public abstract class ChannelListFragmentTab extends Fragment implements Recycle
         }
     }
 
+    protected void setRootView(View rootView) {
+        mRootView = rootView;
+    }
+
+    protected View getRootView(){
+        return mRootView;
+    }
+
+    protected Context getRootViewContext() {
+        return mRootView.getContext();
+    }
+
+    protected ChannelAdapter getChannelAdapter(){
+        return mChannelAdapter;
+    }
+
     @Override
     public void onItemClick(View view, int position) {
-        if(mChannelAdapter != null && mChannelAdapter.getChannelList() != null)
+        //on list item favorite click
+        if(view.getId() == R.id.imageView_listItem_favorite)
+        {
+            IChannel chn = mChannelAdapter.getDataList().get(position);
+            chn.toggleFavorite();
+            if(chn.getIsFavorite())
+                new PrefenceManager(mRootView.getContext()).saveChannelToFavorite(chn);
+            else
+                new PrefenceManager(mRootView.getContext()).removeFavorite(chn.getStationUuID());
+
+            mChannelAdapter.updateViewAtPosition(position, false);
+            return;
+        }
+
+        if(mChannelAdapter != null && mChannelAdapter.getDataList() != null)
         {
             mChannelAdapter.updateViewAtPosition(position,true);
             if(mListener != null)
-                mListener.onListFragmentItemClick(mChannelAdapter.getChannelList(),mListName,position);
+                mListener.onListFragmentItemClick(mChannelAdapter.getDataList(),mListName,position);
         }
     }
 
-    @Override
-    public void onItemFavoriteClick(View favoriteView, int position) {
-        IChannel chn = mChannelAdapter.getChannelList().get(position);
-        chn.toggleFavorite();
-        if(chn.getIsFavorite())
-            new PrefenceManager(mRootView.getContext()).saveChannelToFavorite(chn);
-        else
-            new PrefenceManager(mRootView.getContext()).removeFavorite(chn.getStationUuID());
-
-        mChannelAdapter.updateViewAtPosition(position, false);
+    public void onSearch(String searchQuery){
+        if(searchQuery.length()>0)
+            mChannelAdapter.doFilter(searchQuery);
     }
 
-    public void setListener(ListFragmentOnItemClickListener listener) {
+    public void onSearchFinished(){
+        mChannelAdapter.endFilter();
+    }
+
+    public void setListener(ChannelListOnItemClickListener listener) {
         mListener = listener;
     }
 

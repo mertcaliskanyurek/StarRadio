@@ -30,7 +30,9 @@
         android:theme="@style/MaterialTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.mosstech.StarRadio.PlayerFullScreenActivity" />
-        <activity android:name="com.mosstech.StarRadio.MainActivity" >
+        <activity
+            android:name="com.mosstech.StarRadio.MainActivity"
+            android:windowSoftInputMode="adjustNothing" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

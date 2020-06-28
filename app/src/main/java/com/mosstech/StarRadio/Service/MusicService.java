@@ -287,6 +287,12 @@ public class MusicService extends Service implements
         return mChannels.get(mChnIndex);
     }
 
+    public int getChannelsSize() {
+        if(mChannels != null)
+            return mChannels.size();
+        return 0;
+    }
+
     public void setListener(MusicServiceListener listener) {
         mListener = listener;
     }

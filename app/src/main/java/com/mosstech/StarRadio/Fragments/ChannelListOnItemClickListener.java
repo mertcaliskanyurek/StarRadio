@@ -4,6 +4,6 @@ import com.mosstech.StarRadio.Models.IChannel;
 
 import java.util.List;
 
-public interface ListFragmentOnItemClickListener {
+public interface ChannelListOnItemClickListener {
     void onListFragmentItemClick(List<IChannel> channels, String listName, int position);
 }

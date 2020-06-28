@@ -13,6 +13,8 @@
     <color name="colorControlActivated">#5e92f3</color>
 
     <color name="colorAccent">#00BCD4</color>
+
+    <color name="darkBackground">#FF333333</color>
     
     <color name="colorTextPrimary">#ffffff</color>
     <color name="colorWindowBackground">#616161</color>

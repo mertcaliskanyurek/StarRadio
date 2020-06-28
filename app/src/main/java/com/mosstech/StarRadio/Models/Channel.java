@@ -1,5 +1,7 @@
 package com.mosstech.StarRadio.Models;
 
+import android.support.annotation.NonNull;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -234,6 +236,12 @@ public final class Channel implements IChannel, JsonConvertable {
     @Override
     public String getJsonString() {
         return "{}";
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getName();
     }
 }
 

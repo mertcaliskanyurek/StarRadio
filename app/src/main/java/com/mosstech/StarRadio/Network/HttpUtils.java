@@ -33,7 +33,7 @@ public final class HttpUtils {
         params.put("reverse",String.valueOf(true));
         params.put("hidebroken",String.valueOf(true));
 
-        StringRequest request = new StringRequest(Request.Method.GET,url, responseListener,errorListener){
+        StringRequest request = new StringRequest(Request.Method.POST,url, responseListener,errorListener){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 return params;
@@ -55,7 +55,7 @@ public final class HttpUtils {
         params.put("reverse",String.valueOf(true));
         params.put("hidebroken",String.valueOf(true));
 
-        StringRequest request = new StringRequest(Request.Method.GET,url, responseListener,errorListener){
+        StringRequest request = new StringRequest(Request.Method.POST,url, responseListener,errorListener){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 return params;
@@ -79,7 +79,7 @@ public final class HttpUtils {
         params.put("reverse",String.valueOf(true));
         params.put("hidebroken",String.valueOf(true));
 
-        StringRequest request = new StringRequest(Request.Method.GET,url, responseListener,errorListener){
+        StringRequest request = new StringRequest(Request.Method.POST,url, responseListener,errorListener){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 return params;
@@ -101,7 +101,7 @@ public final class HttpUtils {
         params.put("reverse",String.valueOf(true));
         params.put("hidebroken",String.valueOf(true));
 
-        StringRequest request = new StringRequest(Request.Method.GET,url, responseListener,errorListener){
+        StringRequest request = new StringRequest(Request.Method.POST,url, responseListener,errorListener){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 return params;
@@ -162,7 +162,7 @@ public final class HttpUtils {
         String url = URL+"/stations/topvote";
         if(limit != null) url += "/" + limit;
 
-        StringRequest request = new StringRequest(Request.Method.GET,url, responseListener,errorListener);
+        StringRequest request = new StringRequest(Request.Method.POST,url, responseListener,errorListener);
 
         request.setRetryPolicy(new DefaultRetryPolicy(REQUEST_TIMEOUT
                 ,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));

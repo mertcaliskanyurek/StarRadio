@@ -419,9 +419,15 @@ attr rippleColor
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
+attr searchBackIcon
+attr searchBackground
+attr searchCloseIcon
 attr searchHintIcon
 attr searchIcon
+attr searchSuggestionBackground
+attr searchSuggestionIcon
 attr searchViewStyle
+attr searchVoiceIcon
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
@@ -619,6 +625,7 @@ color colorSecondaryDark
 color colorSecondaryLight
 color colorTextPrimary
 color colorWindowBackground
+color darkBackground
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -693,6 +700,7 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
+color search_layover_bg
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -922,6 +930,8 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen play_controls_notification
+dimen search_icon_padding
+dimen search_view_text_padding
 dimen status_bar_album_art
 dimen status_bar_button_info_container_padding_left
 dimen status_bar_button_width_height
@@ -1042,6 +1052,7 @@ drawable button_previous_sc
 drawable button_random_off
 drawable button_random_on
 drawable button_stop
+drawable color_cursor_white
 drawable default_info
 drawable default_simge
 drawable design_bottom_navigation_item_background
@@ -1050,11 +1061,19 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_action_action_search
+drawable ic_action_navigation_arrow_back
+drawable ic_action_navigation_arrow_back_inverted
+drawable ic_action_navigation_close
+drawable ic_action_navigation_close_inverted
+drawable ic_action_voice_search
+drawable ic_action_voice_search_inverted
 drawable ic_info_black_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
+drawable ic_suggestion
 drawable ic_sync_black_24dp
 drawable logo1
 drawable mtrl_snackbar_background
@@ -1093,6 +1112,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_empty_btn
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1100,13 +1120,14 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id action_up_btn
+id action_voice_btn
 id actions
 id activity_chooser_view_content
 id add
 id alertTitle
 id all
 id always
-id appBarLayout
 id async
 id auto
 id barrier
@@ -1247,15 +1268,19 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchTextView
 id search_badge
 id search_bar
 id search_button
 id search_close_btn
 id search_edit_frame
 id search_go_btn
+id search_layout
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_top_bar
+id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -1281,6 +1306,9 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id suggestion_icon
+id suggestion_list
+id suggestion_text
 id tabMode
 id tab_layout
 id tag_transition_group
@@ -1292,6 +1320,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView_category_name
+id textView_category_station_count
 id textView_channel_name_minimize
 id textView_fullScreen_channelName
 id textView_fullScreen_country
@@ -1312,6 +1342,7 @@ id toggleButtonArama
 id toggleButtonMobilVeri
 id toggleButtonOtomBas
 id toolbar
+id toolbar_container
 id top
 id topPanel
 id touch_outside
@@ -1320,6 +1351,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id transparent_view
 id uniform
 id unlabeled
 id up
@@ -1379,6 +1411,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_player_full_screen
 layout activity_settings
+layout category_layout
 layout channel_layout
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1394,7 +1427,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout fragment_channel_list
+layout fragment_list
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout music_control_layout
@@ -1415,9 +1448,11 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout search_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout suggest_item
 layout support_simple_spinner_dropdown_item
 menu menu_main
 string abc_action_bar_home_description
@@ -1485,18 +1520,23 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string search_hint
 string search_menu_title
 string settTextArama
 string settTextBaslik
 string settTextMobilVeri
 string settTextOtom
 string status_bar_notification_info_overflow
+string tab_name_countries
 string tab_name_favorites
+string tab_name_languages
 string tab_name_list_top_vote
 string tab_name_list_your_country
 string tab_name_now_playing
+string tab_name_tags
 string textToggleAc
 string textToggleKap
+string text_category_name
 string text_channel_name
 string text_country
 string text_language
@@ -1505,6 +1545,7 @@ string text_noti_title
 string text_play
 string text_playlist_name
 string text_previous
+string text_station_count
 string text_web
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -1706,6 +1747,8 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style MSV_ImageButton
+style MaterialSearchViewStyle
 style MaterialTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
@@ -2061,6 +2104,7 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
+styleable MaterialSearchView android_textColor android_textColorHint android_hint searchBackIcon searchBackground searchCloseIcon searchSuggestionBackground searchSuggestionIcon searchVoiceIcon
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow

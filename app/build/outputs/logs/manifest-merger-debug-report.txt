@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/6edf94b06c8bc80072a825db04494b66/support-v4-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/5c043475a7dddd1ba4b401c40076c72b/materialsearchview-1.4.0/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:design:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/7b842e7eb855e107750dbaeaf2359553/design-28.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/51a1613f31dbd4a0aea45c7e9d606df1/appcompat-v7-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/51fc148e9cea6cacb328c2992e951d38/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
@@ -40,22 +41,22 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mert/.gradle/caches/
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mert/.gradle/caches/transforms-2/files-2.1/9baf189892bdcd71960ed5fbd866316b/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mert/.gradle/caches/transforms-2/files-2.1/40227f4ed696287ec96b7c1f9aaf7636/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/mert/.gradle/caches/transforms-2/files-2.1/eef90b9a0443c52f697f2befd53a32d3/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:4:5-37
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-53:12
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:1-54:12
 		INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:2:11-69
@@ -92,7 +93,9 @@ ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/ma
 	android:name
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:13:22-74
 application
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:15:5-51:19
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:15:5-52:19
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/5c043475a7dddd1ba4b401c40076c72b/materialsearchview-1.4.0/AndroidManifest.xml:11:5-20
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/5c043475a7dddd1ba4b401c40076c72b/materialsearchview-1.4.0/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/7b842e7eb855e107750dbaeaf2359553/design-28.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/7b842e7eb855e107750dbaeaf2359553/design-28.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.volley:volley:1.1.1] /Users/mert/.gradle/caches/transforms-2/files-2.1/6f345d142c827bea18a0d6802e24d117/volley-1.1.1/AndroidManifest.xml:9:5-20
@@ -128,61 +131,65 @@ ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/ma
 	android:name
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:24:19-59
 activity#com.mosstech.StarRadio.MainActivity
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:9-31:20
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:9-32:20
+	android:windowSoftInputMode
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:26:13-56
 	android:name
 		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:25:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:30:27-74
 service#com.mosstech.StarRadio.Service.MusicService
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:9-57
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:34:9-57
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:33:18-54
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:34:18-54
 receiver#com.mosstech.StarRadio.Receivers.PhoneChangeReceiver
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:35:9-45:20
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:36:9-46:20
 	android:enabled
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:37:13-35
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:38:13-35
 	android:label
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:39:13-50
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:40:13-50
 	android:exported
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:38:13-36
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:36:13-58
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:37:13-58
 intent-filter#action:name:android.intent.action.HEADSET_PLUG+action:name:android.intent.action.PHONE_STATE+action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:40:13-44:29
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:13-45:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:17-79
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:17-79
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:41:25-76
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:25-76
 action#android.intent.action.PHONE_STATE
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:17-76
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:17-76
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:42:25-73
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:25-73
 action#android.intent.action.HEADSET_PLUG
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:17-77
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:43:25-74
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:44:25-74
 activity#com.mosstech.StarRadio.SettingsActivity
-ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:47:9-50:47
+ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:48:9-51:47
 	android:label
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:49:13-36
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:50:13-36
 	android:theme
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:50:13-44
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:51:13-44
 	android:name
-		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml:49:13-45
 uses-sdk
 INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mert/Desktop/AndroidStudioProjects.nosync/RadioStar/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:support-v4:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/6edf94b06c8bc80072a825db04494b66/support-v4-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/6edf94b06c8bc80072a825db04494b66/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/5c043475a7dddd1ba4b401c40076c72b/materialsearchview-1.4.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/5c043475a7dddd1ba4b401c40076c72b/materialsearchview-1.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/7b842e7eb855e107750dbaeaf2359553/design-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/7b842e7eb855e107750dbaeaf2359553/design-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mert/.gradle/caches/transforms-2/files-2.1/51a1613f31dbd4a0aea45c7e9d606df1/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44

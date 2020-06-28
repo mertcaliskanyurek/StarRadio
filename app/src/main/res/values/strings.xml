@@ -32,6 +32,11 @@
     <string name="text_next">Sonraki</string>
     <string name="text_previous">Önceki</string>
 
+    <string name="text_category_name">Kategori İsmi</string>
+    <string name="text_station_count">İstasyon Sayısı</string>
+
+    <string name="search_hint">Ara..</string>
+
     <string name="catAraSonuc">Arama Sonuçları</string>
 
     <string name="errMusicServ">Music Service Başlatılamadı</string>
@@ -40,6 +45,9 @@
     <string name="tab_name_list_top_vote">En Çok Oylanan</string>
     <string name="tab_name_list_your_country">Ülkendekiler</string>
     <string name="tab_name_favorites">Favoriler</string>
+    <string name="tab_name_countries">Ülkeler</string>
+    <string name="tab_name_languages">Diller</string>
+    <string name="tab_name_tags">Taglar</string>
 
     <string name="err_no_store">Lütfen Market Uygulaması Bulunduğuna Emin Olun</string>
     <string name="err_white_downloading_channels">Kanalları indirirken hata oluştu. Tekrar deneyin. </string>

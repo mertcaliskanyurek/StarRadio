@@ -1,0 +1,19 @@
+package com.mosstech.StarRadio.Fragments;
+
+import com.mosstech.StarRadio.Network.HttpUtils;
+import com.mosstech.StarRadio.Network.VolleySingleton;
+
+public final class CategoryTagListFragmentTab extends CategoryListFragmentTab {
+    @Override
+    protected void prepareCategories() {
+        VolleySingleton volley = VolleySingleton.getInstance(getRootViewContext());
+        volley.addToRequestQueue(HttpUtils.createTagsRequest(this,this));
+    }
+
+    @Override
+    protected void makeRequest() {
+        VolleySingleton volley = VolleySingleton.getInstance(getRootViewContext());
+        volley.addToRequestQueue(HttpUtils.createStationRequest(HttpUtils.SEARCH_TYPE_BY_TAG,getSelectedCategoryName(),
+                "votes", null,true, this,this));
+    }
+}
